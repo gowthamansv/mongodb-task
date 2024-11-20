@@ -1,9 +1,11 @@
 # Mongodb-Task
 
 ## Collection
-
+<br>
+![Alt text](collection.png)<br>
 ## Aggregations
-
+<br>
+![Alt text](aggregate.png)<br>
 ### sample data
 
 users 
@@ -215,11 +217,23 @@ output
 
 ### 3. Find all the company drives and students who are appeared for the placement.
 ```javascript
-
+db.getCollection('company_drives').aggregate(
+  [
+    { $unwind: '$info' },
+    {
+      $group: {
+        _id: '$company',
+        no_of_users: { $sum: 1 }
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);
 ```
 output
 <br>
-![Alt text](3.png)<br>
+![Alt text](3.1.png)<br>
+![Alt text](3.2.png)<br>
 
 ### 4. Find the number of problems solved by the user in codekata
 ```javascript
