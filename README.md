@@ -188,8 +188,11 @@ db.getCollection('tasks').aggregate(
   { maxTimeMS: 60000, allowDiskUse: true }
 );
 ```
-output
-
+output<br>
+![Alt text](1.1.png)<br>
+![Alt text](1.11.png)<br>
+![Alt text](1.2.png)<br>
+![Alt text](1.22.png)<br>
 ### 2. Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
 ```javascript
 db.getCollection('company_drives').aggregate(
@@ -207,12 +210,16 @@ db.getCollection('company_drives').aggregate(
 );
 ```
 output
+<br>
+![Alt text](2.png)<br>
 
 ### 3. Find all the company drives and students who are appeared for the placement.
 ```javascript
 
 ```
 output
+<br>
+![Alt text](3.png)<br>
 
 ### 4. Find the number of problems solved by the user in codekata
 ```javascript
@@ -232,6 +239,10 @@ db.getCollection('users').aggregate(
 );
 ```
 output
+<br>
+![Alt text](4.1.png)<br>
+![Alt text](4.2.png)<br>
+![Alt text](4.3.png)<br>
 
 ### 5. Find all the mentors with who has the mentee's count more than 15
 ```javascript
@@ -249,6 +260,8 @@ db.getCollection('users').aggregate(
 );
 ```
 output
+<br>
+![Alt text](5.png)<br>
 
 ### 6. Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
 ```javascript
@@ -279,3 +292,6 @@ db.getCollection('attendance').aggregate(
   { maxTimeMS: 60000, allowDiskUse: true }
 );
 ```
+output
+<br>
+![Alt text](6.png)
