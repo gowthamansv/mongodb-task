@@ -2,10 +2,15 @@
 
 ## Collection
 <br>
-![Alt text](collection.png)<br>
-## Aggregations
+<img src="collection.png"/>
 <br>
-![Alt text](aggregate.png)<br>
+
+## Aggregations
+
+<br>
+<img src="aggregate.png"/>
+  <br>
+
 ### sample data
 
 users 
